@@ -61,3 +61,21 @@ Na cadeia de suprimentos, as empresas precisam decidir como atender o cliente se
 O Trade-off: Aumentar o nível de serviço (ter todos os produtos prontos para entrega imediata) exige altos custos de inventário (estoque alto e caro) e alto custo de armazenagem. Assim como Mercado Livre fez atualmente, aumentando sua capacidade de armazenamento.
 **A escolha:** Manter estoque alto (cliente satisfeito, mas alto custo operacional) OU manter estoque baixo (reduz custos, mas arrisca não ter produto para vender - ruptura)
 
+
+#### 5. É possivel testar tudo?
+```C#
+int bleach ( int j) {
+j = j-1 // deveria ser j = + 1
+j = j / 30.000
+return j;
+}
+```
+
+Amostragem: -32.768 até +32.767
+
+
+**1.** Quantas entradas mostram o erro?
+R: 4
+
+**2.** Quais são?
+   R: 30,000; -30.000; -29.999; 29.999
