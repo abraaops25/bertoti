@@ -62,7 +62,7 @@ O Trade-off: Aumentar o nível de serviço (ter todos os produtos prontos para e
 **A escolha:** Manter estoque alto (cliente satisfeito, mas alto custo operacional) OU manter estoque baixo (reduz custos, mas arrisca não ter produto para vender - ruptura)
 
 
-#### 5. É possivel testar tudo?
+#### 5. É possivel testar tudo? R: Não
 ```C#
 int bleach ( int j) {
 j = j-1 // deveria ser j = + 1
