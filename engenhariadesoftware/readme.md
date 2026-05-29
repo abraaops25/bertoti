@@ -45,21 +45,14 @@ Alta Disponibilidade (Consistência Eventual): O sistema aceita a escrita, mas o
 
 #### 4. Trade-offs (negociação entre requisitos não funcionais)
 
- **1. Negócios:** Qualidade vs. Custo (ou Velocidade)
-Em produção ou gestão de projetos, é raro conseguir a mais alta qualidade, o menor preço e a entrega mais rápida ao mesmo tempo.
-O Trade-off: Se uma empresa decide aumentar drasticamente a qualidade do produto (matéria-prima superior, mais inspeções), ela provavelmente aumentará o custo de produção ou reduzirá a velocidade de entrega. Um exemplo disso é a plataforma de jogos Riot aumentando a qualidade, reduzimdo a velocidade de entrega para algumas maquinas;
-**A escolha:** Produzir um item premium, caro e mais lento, OU um item barato, rápido, mas de qualidade padrão.
+ **1.Desempenho x Consumo de Memória:** Um algoritmo de cache pode acelerar o acesso aos dados (otimização de tempo), mas consumirá mais memória RAM (otimização de espaço)
 
-**2. Pessoal:** Tempo vs. Dinheiro (Trabalho vs. Lazer)
-Um dos trade-offs mais comuns na vida diária é a alocação de tempo para geração de renda versus qualidade de vida.
-O Trade-off: Dedicar mais horas ao trabalho aumenta a renda (dinheiro), mas reduz o tempo livre (lazer) para família, hobbies ou descanso.
-Assim como a maioria dos trabalhadores comuns.
- **A escolha:** Fazer horas extras para comprar algo (ganha dinheiro, perde tempo) OU recusar horas extras para descansar (ganha tempo, perde dinheiro)
 
- **3. Logística:** Nível de Serviço vs. Custos de Inventário
-Na cadeia de suprimentos, as empresas precisam decidir como atender o cliente sem falir.
-O Trade-off: Aumentar o nível de serviço (ter todos os produtos prontos para entrega imediata) exige altos custos de inventário (estoque alto e caro) e alto custo de armazenagem. Assim como Mercado Livre fez atualmente, aumentando sua capacidade de armazenamento.
-**A escolha:** Manter estoque alto (cliente satisfeito, mas alto custo operacional) OU manter estoque baixo (reduz custos, mas arrisca não ter produto para vender - ruptura)
+**2.Consistência x Disponibilidade (Teorema CAP):** Em sistemas distribuídos, você pode garantir que todos os nós tenham dados idênticos (consistência forte), mas o sistema pode ficar indisponível temporariamente caso haja falhas na rede
+
+
+ **3. Acoplamento x Escalabilidade:** Dividir uma aplicação monolítica em microsserviços facilita a escalabilidade independente e a manutenção, mas aumenta consideravelmente a complexidade operacional, de rede e de monitoramento
+
 
 
 #### 5. É possivel testar tudo? R: Não
